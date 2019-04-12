@@ -12,6 +12,8 @@
 - `amount` - сумма транзакции
 - `currency` - тип валюты
 
+## Описание компонента
+
 Необходимо создать компонент `TransactionHistory` принимающий один проп
 `items` - массив объектов транзакций как в `transactions.json`. Компонент
 создает разметку таблицы следующего вида. Для примера указана разметка двух
@@ -40,4 +42,15 @@
     </tr>
   </tbody>
 </table>
+```
+
+## Пример использования
+
+```js
+import transactions from 'path/to/transactions.json';
+
+ReactDOM.render(
+  <TransactionHistory items={transactions} />,
+  document.getElementById('root'),
+);
 ```
