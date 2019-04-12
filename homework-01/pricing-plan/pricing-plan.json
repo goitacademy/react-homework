@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Bronze",
+    "icon": "https://raw.githubusercontent.com/goitacademy/react-homework/master/homework-01/pricing-plan/assets/bronze-icon.png",
+    "capacity": "2TB",
+    "price": 39,
+    "description": "Praesent blandit laoreet nibh. Vivamus quis mi. Vestibulum eu odio. Ut tincidunt tincidunt erat. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam."
+  },
+  {
+    "label": "Silver",
+    "icon": "https://raw.githubusercontent.com/goitacademy/react-homework/master/homework-01/pricing-plan/assets/silver-icon.png",
+    "capacity": "20TB",
+    "price": 99,
+    "description": "Praesent blandit laoreet nibh. Vivamus quis mi. Vestibulum eu odio. Ut tincidunt tincidunt erat. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam."
+  },
+  {
+    "label": "Gold",
+    "icon": "https://raw.githubusercontent.com/goitacademy/react-homework/master/homework-01/pricing-plan/assets/gold-icon.png",
+    "capacity": "400TB",
+    "price": 499,
+    "description": "Praesent blandit laoreet nibh. Vivamus quis mi. Vestibulum eu odio. Ut tincidunt tincidunt erat. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam."
+  }
+]

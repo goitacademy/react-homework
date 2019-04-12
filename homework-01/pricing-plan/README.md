@@ -1,7 +1,8 @@
 # Задание 3 - Тарифный план
 
 Необходимо создать компоненты, с помощью которых мы могли бы отображать
-информацию о тарифном плане на услуги компании.
+информацию о тарифном плане на услуги компании. Информация о тарифных планах
+хранится в файле [pricing-plan.json](./pricing-plan.json).
 
 - `PricingItem` - создает разметку одного элемента тарифного плана
 - `PricingPlan` - создает разметку всего списка тарифного плана и использует
@@ -55,35 +56,10 @@
 ## Пример использования
 
 ```js
-const pricingPlans = [
-  {
-    label: 'Bronze',
-    icon: 'icon url',
-    capacity: '2TB',
-    price: 39,
-    description:
-      'Etiam vitae tortor. Ut leo. Fusce fermentum. Pellentesque auctor neque nec urna.',
-  },
-  {
-    label: 'Silver',
-    icon: 'icon url',
-    capacity: '20TB',
-    price: 99,
-    description:
-      'Etiam vitae tortor. Ut leo. Fusce fermentum. Pellentesque auctor neque nec urna.',
-  },
-  {
-    label: 'Gold',
-    icon: 'icon url',
-    capacity: '400TB',
-    price: 499,
-    description:
-      'Etiam vitae tortor. Ut leo. Fusce fermentum. Pellentesque auctor neque nec urna.',
-  },
-];
+import pricingPlanItems from 'path/to/pricing-plan.json';
 
 ReactDOM.render(
-  <PricingPlan items={pricingPlansComp} />,
+  <PricingPlan items={pricingPlanItems} />,
   document.getElementById('root'),
 );
 ```
