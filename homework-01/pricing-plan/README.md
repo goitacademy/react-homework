@@ -3,7 +3,7 @@
 Необходимо создать компоненты, с помощью которых мы могли бы отображать
 информацию о тарифном плане на услуги компании.
 
-![pricing plan preview](./preview.jpg)
+![pricing plan preview](./mockup/preview.jpg)
 
 Информация о тарифных планах хранится в файле [pricing-plan.json](./pricing-plan.json).
 
