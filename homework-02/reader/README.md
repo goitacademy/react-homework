@@ -1,0 +1,56 @@
+# Читатель статей
+
+Необходимо создать гаджет читателя публикаций.
+
+![reader preview](./mockup/preview.png)
+
+Список публикаций хранится в файле [publications.json](./publications.json).
+
+Необходимо создать компоненты `Reader`, `Publication`, `Counter` и `Controls` c
+необходимыми пропами и состоянием.
+
+## Описание компонента Reader
+
+Компонент должен иметь один проп `items` - массив объектов публикаций следующего
+формата.
+
+- `id` — уникальный идентификатор публикации
+- `title` — заголовок
+- `text` — текстовый контент
+
+Результирующий гаджет должен создавать DOM-элемент следующей структуры.
+
+```html
+<div class="reader">
+  <section class="publication">
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+      molestiae dolore ipsa sed similique necessitatibus. Aut qui porro
+      quibusdam esse libero est eius, repellendus unde nihil, sequi voluptate
+      eaque officiis aliquam impedit laborum adipisci cumque sit.
+    </p>
+  </section>
+
+  <p class="counter">3/10</p>
+
+  <section class="controls">
+    <button class="button">Previous</button>
+    <button class="button">Next</button>
+  </section>
+</div>
+```
+
+Возьми готовые стили из файла [styles.css](./styles.css) и подкорректируй их под
+`CSS-модули` или `Styled Components`.
+
+## Пример использования
+
+```js
+import publications from 'path/to/publications.json';
+
+ReactDOM.render(
+  <Reader items={publications} />,
+  document.getElementById('root'),
+);
+```
