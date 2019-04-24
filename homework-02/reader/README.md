@@ -37,8 +37,8 @@
   <p class="counter">3/10</p>
 
   <section class="controls">
-    <button class="button">Previous</button>
-    <button class="button">Next</button>
+    <button class="button">Назад</button>
+    <button class="button">Вперед</button>
   </section>
 </div>
 ```
