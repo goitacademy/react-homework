@@ -1,0 +1,84 @@
+# Кабинет интернет банка
+
+Необходимо создать компонент имитирующий операции в личном кабинете интернет
+банка.
+
+![reader preview](./mockup/preview.png)
+
+Необходимо создать компоненты `Dashboard`, `Controls`, `Balance` и
+`TransactionHistory` c необходимыми пропами и состоянием.
+
+## Описание компонента Dashboard
+
+В состоянии компонент хранит историю транзакций (массив объектов) в
+`state.history` и текущий баланс (число) в `state.balance`, и пробрасывает
+необходимые данные своим детям как пропы.
+
+Каждая транзакия это объект следующего формата:
+
+- `id` - уникальный идентификатор, строка. Для генерации идентификаторов
+  используй пакет [shortid](https://www.npmjs.com/package/shortid) или
+  [uuid](https://www.npmjs.com/package/uuid).
+- `type` - тип транзакции, один из двух, `deposit` или `withdrawal`, строка.
+- `amount` - сумма транзакции, число.
+- `date` - дата транзакции (результат метод Date.prototype.toLocaleString()),
+  строка.
+
+## Описание компонента Controls
+
+Если, при операции снятия денег, в инпут компонента `Controls` введено значение
+больше чем сейчас есть на счету, должен появляться
+`alert('На счету недостаточно средств для проведения операции!')` и операция
+снятия не выполняется.
+
+При попытке совершить банковскую операцию когда в инпуте введен `0`, должен
+появляться `alert('Введите сумму для проведения операции!')` и операция не
+выполняется.
+
+## HTML-разметка
+
+В DOM-дерево должна генериться разметка следующей структуры.
+
+```html
+<div class="dashboard">
+  <section class="controls">
+    <input type="number" />
+    <button>Deposit</button>
+    <button>Withdraw</button>
+  </section>
+
+  <section class="balance">
+    <span>⬆️2000$</span>
+    <span>⬇️1000$</span>
+    <span>Balance: 5000$</span>
+  </section>
+
+  <table class="history">
+    <thead>
+      <tr>
+        <th>Transaction</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Deposit</td>
+        <td>200$</td>
+        <td>4/17/2019, 12:45:17</td>
+      </tr>
+      <tr>
+        <td>Withdrawal</td>
+        <td>100$</td>
+        <td>4/18/2019, 14:15:23</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+## Пример использования
+
+```js
+ReactDOM.render(<Dashboard />, document.getElementById('root'));
+```
