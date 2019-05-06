@@ -24,7 +24,7 @@
 
 ```html
 <div class="reader">
-  <section class="publication">
+  <article class="publication">
     <h2>Lorem ipsum dolor sit amet.</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
@@ -32,7 +32,7 @@
       quibusdam esse libero est eius, repellendus unde nihil, sequi voluptate
       eaque officiis aliquam impedit laborum adipisci cumque sit.
     </p>
-  </section>
+  </article>
 
   <p class="counter">3/10</p>
 
