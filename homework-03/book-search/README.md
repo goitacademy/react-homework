@@ -32,3 +32,10 @@ https://www.googleapis.com/books/v1/volumes?q=react+subject:computers
 `BookListItem` принимает пропы `image` (картинка), `title` (заголовок),
 `description` (описание), `author` (автор), `publisher` (издательство) и
 `publishedDate` (год издания), `pageCount` (кол-во страниц), `rating` (рейтинг).
+
+## Описание компонента Loader
+
+Спиннер отображающийся во время HTTP-запроса. Оформление произвольное. Можно
+использовать готовые компоненты из библиотек
+[halogen](https://github.com/yuanyan/halogen) или
+[react-spinkit](https://github.com/KyleAMathews/react-spinkit).
