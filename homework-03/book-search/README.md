@@ -7,11 +7,11 @@
 Для HTTP-запросов используется
 [Google Books API](https://developers.google.com/books/docs/v1/using#WorkingVolumes).
 
-Например, если пользователь хочет найти книги с заголовком `sun` и жанром
-`drama`, то адрес GET-запроса будет выглядеть следующим образом.
+Например, если пользователь хочет найти книги с заголовком `react` и жанром
+`computers`, то адрес GET-запроса будет выглядеть следующим образом.
 
 ```bash
-https://www.googleapis.com/books/v1/volumes?q=sun+subject:drama
+https://www.googleapis.com/books/v1/volumes?q=react+subject:computers
 ```
 
 ## Описание компонента SearchForm
