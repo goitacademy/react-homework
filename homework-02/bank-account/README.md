@@ -3,7 +3,7 @@
 Необходимо создать компонент имитирующий операции в личном кабинете интернет
 банка.
 
-![reader preview](./mockup/preview.png)
+![reader preview](./mockup/preview.jpg)
 
 Необходимо создать компоненты `Dashboard`, `Controls`, `Balance` и
 `TransactionHistory` c необходимыми пропами и состоянием.
