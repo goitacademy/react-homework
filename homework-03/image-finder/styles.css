@@ -1,0 +1,151 @@
+/* Базовые стили */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  color: #212121;
+  background-color: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Стили компонента App */
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+}
+
+/* Стили компонента SearchForm */
+.search-form {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-form input {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border: honeydew;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  font: inherit;
+  font-size: 16px;
+  border-radius: 2px;
+  outline: none;
+}
+
+/* Стили компонента Gallery */
+.gallery {
+  width: 1120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Стили компонента GalleryItem */
+.gallery-item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item img {
+  height: 260px;
+  object-fit: cover;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  user-select: none;
+  color: #414141;
+  padding: 4px;
+}
+
+.stats-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.stats-item i {
+  margin-right: 4px;
+}
+
+.fullscreen-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font: inherit;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 200ms linear, opacity 200ms linear;
+  opacity: 0;
+}
+
+.fullscreen-button:hover,
+.fullscreen-button:focus {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fullscreen-button i {
+  font-size: 36px;
+}
+
+.gallery-item:hover .fullscreen-button,
+.gallery-item:focus .fullscreen-button {
+  opacity: 1;
+}
+
+/* Стили кнопки Load more */
+.button {
+  padding: 8px 16px;
+  border-radius: 3px;
+  background-color: #3884ff;
+  transition: all 200ms ease;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  min-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #1f65d6;
+}
