@@ -86,10 +86,6 @@ img {
   flex-grow: 1;
 }
 
-.stats-item i {
-  margin-right: 4px;
-}
-
 .fullscreen-button {
   position: absolute;
   top: 50%;
