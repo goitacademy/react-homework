@@ -51,8 +51,8 @@
 <div class="dashboard">
   <section class="controls">
     <input type="number" />
-    <button>Deposit</button>
-    <button>Withdraw</button>
+    <button type="button">Deposit</button>
+    <button type="button">Withdraw</button>
   </section>
 
   <section class="balance">
