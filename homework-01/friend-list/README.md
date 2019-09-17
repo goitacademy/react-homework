@@ -33,7 +33,7 @@ styled-components.
 Компонент должен создавать DOM следующей структуры.
 
 ```html
-<li>
+<li class="item">
   <span class="status"></span>
   <img class="avatar" src="" alt="" width="48" />
   <p className="name">Mango</p>
