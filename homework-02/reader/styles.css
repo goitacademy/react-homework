@@ -43,15 +43,14 @@ body {
 .counter {
   text-align: center;
   font-weight: 400;
-  font-size: 20px;
-  margin-bottom: 0;
-  margin-top: 16px;
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
 .controls {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .button {
