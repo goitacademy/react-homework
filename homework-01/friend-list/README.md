@@ -36,7 +36,7 @@ styled-components.
 <li class="item">
   <span class="status"></span>
   <img class="avatar" src="" alt="" width="48" />
-  <p className="name">Mango</p>
+  <p class="name"></p>
 </li>
 ```
 
