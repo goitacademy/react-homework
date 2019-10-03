@@ -5,8 +5,8 @@
 
 ![reader preview](./mockup/preview.jpg)
 
-Необходимо создать компоненты `Dashboard`, `Controls`, `Balance` и
-`TransactionHistory` c необходимыми пропами и состоянием.
+Необходимо создать компоненты `<Dashboard>`, `<Controls>`, `<Balance>` и
+`<TransactionHistory>` c необходимыми пропами и состоянием.
 
 ## Описание компонента Dashboard
 
@@ -26,8 +26,17 @@
 
 ## Описание компонента Controls
 
-Если, при операции снятия денег, в инпут компонента `Controls` введено значение
-больше чем сейчас есть на счету, должно появляться оповещение
+В своем состоянии хранит текущее значения инпута (контролируемый компонент).
+
+Должен принимать следующие пропы:
+
+- `onDeposit(amount)` - функция, вызывается при нажатии на кнопку "Deposit",
+  принимает сумму транзакции
+- `onWithdraw(amount)` - функция, вызывается при нажатии на кнопку "Withdraw",
+  принимает сумму транзакции
+
+Если, при операции снятия денег, в инпут введено значение больше чем сейчас есть
+на счету, должно появляться оповещение
 `'На счету недостаточно средств для проведения операции!'` и операция снятия не
 выполняется.
 
@@ -36,31 +45,48 @@
 выполняется.
 
 Для оповещений используй компоненты
-[react-toastify](https://github.com/fkhadra/react-toastify) или [react-toast-notifications](https://github.com/jossmac/react-toast-notifications).
+[react-toastify](https://github.com/fkhadra/react-toastify) или
+[react-toast-notifications](https://github.com/jossmac/react-toast-notifications).
 
 ## Описание компонента Balance
 
-Кроме значения текущего баланса, отображает общую сумму расходов и доходов
-клиента.
+Рендерит текущий баланс и общую сумму расходов и доходов клиента. Эти значения
+получает как пропы:
+
+- `balance` - текущий баланс
+- `income` - общая сумма доходов
+- `expenses` - общая сумма расходов
+
+Для составления значений пропов `income` и `expenses` напиши функцию
+высчитывающую общу сумму расходов/доходов из массива транзакций.
+
+## Описание компонента TransactionHistory
+
+Рендерит историю транзакций клиента. Получает один проп `items` - массив
+объектов транзакций.
 
 ## HTML-разметка
 
 В DOM-дерево должна генериться разметка следующей структуры.
 
 ```html
+<!-- Разметка компонента <Dashboard> -->
 <div class="dashboard">
+  <!-- Разметка компонента <Controls> -->
   <section class="controls">
-    <input type="number" />
+    <input type="number" name="amount" />
     <button type="button">Deposit</button>
     <button type="button">Withdraw</button>
   </section>
 
+  <!-- Разметка компонента <Balance> -->
   <section class="balance">
     <span>⬆️2000$</span>
     <span>⬇️1000$</span>
     <span>Balance: 5000$</span>
   </section>
 
+  <!-- Разметка компонента <TransactionHistory> -->
   <table class="history">
     <thead>
       <tr>
