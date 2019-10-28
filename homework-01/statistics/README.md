@@ -1,8 +1,9 @@
 # Секция статистики
 
-Создать компонет `<Stats>`, который бы отображал статистику по переданным
+Создать компонет `<Statistics>`, который бы отображал статистику по переданным
 пропам. К примеру загрузки в облако по типу файлов, посещение веб-страницы
-пользователями разных стран, финансовые траты и т. п.
+пользователями разных стран, финансовые траты и т. п. Данные о статистике лежат
+в файле [statistical-data.json](./statistical-data.json).
 
 ![profile preview](./mockup/preview.jpg)
 
@@ -21,8 +22,8 @@
 Компонент должен создавать DOM элемент следующей структуры.
 
 ```html
-<section class="stats-section">
-  <h2 class="title">Upload stats</h2>
+<section class="statistics">
+  <h2 class="title">File upload</h2>
 
   <ul class="stat-list">
     <li class="item">
@@ -48,16 +49,10 @@
 ## Пример использования
 
 ```js
-const stats = [
-  { id: 'id-1', label: '.docx', percentage: 22 },
-  { id: 'id-2', label: '.pdf', percentage: 4 },
-  { id: 'id-3', label: '.mp3', percentage: 17 },
-  { id: 'id-4', label: '.psd', percentage: 47 },
-  { id: 'id-5', label: '.pdf', percentage: 10 },
-];
+import statisticalData from '/path/to/statistical-data.json';
 
 ReactDOM.render(
-  <Stats title="Upload stats" stats={stats} />,
+  <Statistics title="File upload" stats={statisticalData} />,
   document.getElementById('root'),
 );
 ```
