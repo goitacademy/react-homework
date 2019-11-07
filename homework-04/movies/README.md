@@ -2,6 +2,8 @@
 
 Создай базовую маршрутизацию для приложения поиска и хранения фильмов.
 
+[Демо](https://drive.google.com/file/d/1vR0hi3n1236Q5Bg4-se-8JVKD9UKSfId/view?usp=sharing)
+
 ## themoviedb.org
 
 Для бекенда используй [themoviedb.org API](https://www.themoviedb.org/).
