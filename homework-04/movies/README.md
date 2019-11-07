@@ -1,24 +1,24 @@
 # Кинопоиск
 
-Создай базовую маршрутизацию для приложения поиска и хранения фильмов, используя
-[themoviedb.org API](https://www.themoviedb.org/).
+Создай базовую маршрутизацию для приложения поиска и хранения фильмов.
 
 ## themoviedb.org
 
-Для работы с API необходимо зарегистриваться (можно ввести произвольные данные)
-и получить API-ключ. В этой работе будут использоваться следующие ендпоинты.
+Для бекенда используй [themoviedb.org API](https://www.themoviedb.org/).
+Необходимо зарегистриваться (можно ввести произвольные данные) и получить
+API-ключ. В этой работе будут использоваться следующие ендпоинты.
 
 - [https://developers.themoviedb.org/3/trending/get-trending](https://developers.themoviedb.org/3/trending/get-trending) -
-  список самых популярных фильмов на сегодня. Используется для создания
-  коллекции на главной странице.
+  список самых популярных фильмов на сегодня для создания коллекции на главной
+  странице.
 - [https://developers.themoviedb.org/3/search/search-movies](https://developers.themoviedb.org/3/search/search-movies) -
-  поиск кинофильма по ключевому слову. Используется на странице поиска фильмов.
+  поиск кинофильма по ключевому слову на странице фильмов.
 - [https://developers.themoviedb.org/3/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details) -
-  запрос полной информации о фильме. Используется на странице кинофильма.
+  запрос полной информации о фильме для страницы кинофильма.
 - [https://developers.themoviedb.org/3/movies/get-movie-credits](https://developers.themoviedb.org/3/movies/get-movie-credits) -
-  запрос информации о актреском составе. Используется на странице кинофильма.
+  запрос информации о актреском составе для страницы кинофильма.
 - [https://developers.themoviedb.org/3/movies/get-movie-reviews](https://developers.themoviedb.org/3/movies/get-movie-reviews) -
-  запрос обзоров кинофильма. Используется на странице кинофильма.
+  запрос обзоров для страницы кинофильма.
 
 [Ссылка на документацию](https://developers.themoviedb.org/3/getting-started/introduction)
 
