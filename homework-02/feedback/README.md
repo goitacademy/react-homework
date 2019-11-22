@@ -25,7 +25,7 @@ state = {
 
 Интерфейс может выглядеть так.
 
-![preview](./mockup/step-1.png)
+![preview](./mockup/step-1-b.png)
 
 ## Шаг 2
 
