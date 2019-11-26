@@ -1,6 +1,7 @@
-/* Базовые стили */
 html {
   box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 *,
@@ -10,10 +11,13 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   color: #212121;
   background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -22,116 +26,165 @@ img {
   height: auto;
 }
 
-/* Стили компонента App */
-.app {
+/*
+ * Стили компонента App
+ */
+.App {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 24px;
+  grid-gap: 16px;
+  padding-bottom: 24px;
 }
 
-/* Стили компонента SearchForm */
-.search-form {
+/*
+ * Стили компонента Searchbar
+ */
+.Searchbar {
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #fff;
+  background-color: #3f51b5;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+/*
+ * Стили компонента SearchForm
+ */
+.SearchForm {
+  display: flex;
+  align-items: center;
   width: 100%;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
-.search-form input {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-  border: #f0fff0;
-  display: block;
-  width: 100%;
-  padding: 16px;
-  font: inherit;
-  font-size: 16px;
-  border-radius: 2px;
+.SearchForm-button {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
   outline: none;
 }
 
-/* Стили компонента Gallery */
-.gallery {
+.SearchForm-button:hover {
+  opacity: 1;
+}
+
+.SearchForm-button-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.SearchForm-input {
+  display: inline-block;
+  width: 100%;
+  font: inherit;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.SearchForm-input::placeholder {
+  font: inherit;
+  font-size: 18px;
+}
+
+/*
+ * Стили компонента ImageGallery
+ */
+.ImageGallery {
   display: grid;
-  max-width: 1440px;
+  max-width: calc(100vw - 48px);
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-gap: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Стили компонента GalleryItem */
-.photo-card {
-  position: relative;
-  overflow: hidden;
+/*
+ * Стили компонента ImageGalleryItem
+ */
+.ImageGalleryItem {
   border-radius: 2px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 
-.photo-card img {
+.ImageGalleryItem-image {
+  width: 100%;
   height: 260px;
   object-fit: cover;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.stats {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  user-select: none;
-  color: #414141;
-  padding: 4px;
+.ImageGalleryItem-image:hover {
+  transform: scale(1.03);
+  cursor: zoom-in;
 }
 
-.stats-item {
-  margin: 0;
+/*
+ * Стили компонента Modal
+ */
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  flex-grow: 1;
-}
-
-.fullscreen-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
   align-items: center;
-  justify-content: center;
-  border: none;
-  font: inherit;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 200ms linear, opacity 200ms linear;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
 }
 
-.fullscreen-button:hover,
-.fullscreen-button:focus {
-  background-color: rgba(0, 0, 0, 0.7);
+.Modal {
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 24px);
 }
 
-.fullscreen-button i {
-  font-size: 36px;
-}
-
-.gallery-item:hover .fullscreen-button,
-.gallery-item:focus .fullscreen-button {
-  opacity: 1;
-}
-
-/* Стили кнопки Load more */
-.button {
+/*
+* Стили компонента Buton (Load more)
+*/
+.Button {
   padding: 8px 16px;
-  border-radius: 3px;
-  background-color: #3884ff;
-  transition: all 200ms ease;
+  border-radius: 2px;
+  background-color: #3f51b5;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   display: inline-block;
   color: #fff;
@@ -139,15 +192,16 @@ img {
   text-decoration: none;
   cursor: pointer;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   font-style: normal;
+  font-weight: 500;
   min-width: 180px;
-  margin-left: auto;
-  margin-right: auto;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
-.button:hover,
-.button:focus {
-  background-color: #1f65d6;
+.Button:hover,
+.Button:focus {
+  background-color: #303f9f;
 }
