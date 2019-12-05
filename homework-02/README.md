@@ -1,7 +1,7 @@
 # Критерии приема
 
-- Созданы репозитории `goit-react-hw-02-feedback`, `goit-react-hw-02-phonebook`
-  и `goit-react-hw-02-reader`.
+- Созданы репозитории `goit-react-hw-02-feedback`, `goit-react-hw-02-reader` и
+  `goit-react-hw-02-phonebook`.
 - При сдаче домашней работы есть две ссылки: на исходные файлы и рабочие
   страницы каждого задания на `GitHub pages`.
 - Задание выполнено строго по ТЗ.
