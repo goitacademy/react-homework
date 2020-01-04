@@ -13,7 +13,7 @@
 заголовок и объект статистики.
 
 - `title` - не обязателен, и если он не передан, не должна рендериться разметка
-  заголовка.
+  заголовка `<h2>`.
 - `stats` - массив объектов содержащих информацию о элементе статистики. Может
   иметь произвольное кол-во элементов.
 - Цвет фона элемента статистики в оформлении можно пропустить, либо создать
@@ -23,7 +23,7 @@
 
 ```html
 <section class="statistics">
-  <h2 class="title">File upload</h2>
+  <h2 class="title">Upload stats</h2>
 
   <ul class="stat-list">
     <li class="item">
@@ -52,7 +52,7 @@
 import statisticalData from '/path/to/statistical-data.json';
 
 ReactDOM.render(
-  <Statistics title="File upload" stats={statisticalData} />,
+  <Statistics title="Upload stats" stats={statisticalData} />,
   document.getElementById('root'),
 );
 ```
