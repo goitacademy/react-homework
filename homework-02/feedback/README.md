@@ -43,8 +43,6 @@ state = {
 
 - Вынеси отображение статистики в отдельный компонент
   `<Statistics good={} neutral={} bad={} total={} positivePercentage={}>`.
-- Создай компонент одного элемента статистики `<Statistic label="" value={} >`,
-  он будет использоваться в компоненте `<Statistics>`.
 - Вынеси блок кнопок в компонент
   `<FeedbackOptions options={} onLeaveFeedback={}>`.
 - Создай компонент `<Section title="">`, который рендерит секцию с заголовком и
