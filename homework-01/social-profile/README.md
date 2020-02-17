@@ -1,14 +1,14 @@
 # Профиль социальной сети
 
 Необходимо создать компонент `<Profile>`, с помощью которого мы могли бы
-отображать информацию о пользователе социальной сети. Данные о пользователе лежат в файле [user.json](./user.json).
+отображать информацию о пользователе социальной сети. Данные о пользователе
+лежат в файле [user.json](./user.json).
 
 ![profile preview](./mockup/preview.png)
 
 ## Описание компонента
 
-Компонент должен иметь один проп `user`, в котором он ожидает объект с
-информацией о пользователе:
+Компонент должен принимать несколько пропсов с информацией о пользователе:
 
 - `name` — имя пользователя
 - `tag` — тег в социальной сети без `@`
@@ -53,5 +53,14 @@
 ```js
 import user from 'path/to/user.json;
 
-ReactDOM.render(<Profile user={user} />, document.getElementById('root'));
+ReactDOM.render(
+  <Profile
+    name={user.name}
+    tag={user.tag}
+    location={user.location}
+    avatar={user.avatar}
+    stats={user.stats}
+  />,
+  document.getElementById('root'),
+);
 ```

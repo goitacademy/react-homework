@@ -18,7 +18,7 @@ API-ключ. В этой работе будут использоваться �
 - [https://developers.themoviedb.org/3/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details) -
   запрос полной информации о фильме для страницы кинофильма.
 - [https://developers.themoviedb.org/3/movies/get-movie-credits](https://developers.themoviedb.org/3/movies/get-movie-credits) -
-  запрос информации о актерском составе для страницы кинофильма.
+  запрос информации о актёрском составе для страницы кинофильма.
 - [https://developers.themoviedb.org/3/movies/get-movie-reviews](https://developers.themoviedb.org/3/movies/get-movie-reviews) -
   запрос обзоров для страницы кинофильма.
 
