@@ -24,6 +24,6 @@
 ## Задания
 
 - [Завдання 1 - Профіль соціальної мереж](./social-profile/README.ua.md)
-- [Завдання 2 - Секція статистики](./statistics/)
-- [Завдання 3 - Список друзів](./friend-list/)
-- [Завдання 4 - Історія транзакцій](./transaction-history/)
+- [Завдання 2 - Секція статистики](./statistics/README.ua.md)
+- [Завдання 3 - Список друзів](./friend-list/README.ua.md)
+- [Завдання 4 - Історія транзакцій](./transaction-history/README.ua.md)
