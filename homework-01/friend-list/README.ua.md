@@ -6,7 +6,7 @@
 відображати інформацію про друзів користувача. Інформація про друзів
 зберігається в файлі [friends.json](./friends.json).
 
-![friend list preview](./mockup/preview.jpg)
+![friend list preview](./preview.jpg)
 
 ## Опис компонента FriendList
 
@@ -46,8 +46,5 @@
 ```js
 import friends from 'path/to/friends.json';
 
-ReactDOM.render(
-  <FriendList friends={friends} />,
-  document.getElementById('root'),
-);
+<FriendList friends={friends} />;
 ```

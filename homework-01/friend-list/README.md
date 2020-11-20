@@ -6,7 +6,7 @@
 отображать информацию о друзьях пользователя. Информация о друзьях хранится в
 файле [friends.json](./friends.json).
 
-![friend list preview](./mockup/preview.jpg)
+![Превью компонента FriendList](./preview.jpg)
 
 ## Описание компонента FriendList
 
@@ -44,10 +44,7 @@
 ## Пример использования
 
 ```js
-import friends from 'path/to/friends.json';
+import friends from 'путь/к/friends.json';
 
-ReactDOM.render(
-  <FriendList friends={friends} />,
-  document.getElementById('root'),
-);
+<FriendList friends={friends} />,
 ```

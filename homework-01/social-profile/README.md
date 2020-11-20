@@ -6,7 +6,7 @@
 отображать информацию о пользователе социальной сети. Данные о пользователе
 лежат в файле [user.json](./user.json).
 
-![profile preview](./mockup/preview.png)
+![Превью компонента Profile](./preview.png)
 
 ## Описание компонента
 
@@ -24,8 +24,8 @@
 <div class="profile">
   <div class="description">
     <img
-      src="https://i.pinimg.com/originals/a0/40/66/a04066a2d1fcf25df39c599e093995c8.jpg"
-      alt="user avatar"
+      src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+      alt="Аватар пользователя"
       class="avatar"
     />
     <p class="name">Petra Marica</p>
@@ -53,16 +53,13 @@
 ## Пример использования
 
 ```js
-import user from 'path/to/user.json;
+import user from 'путь/к/user.json;
 
-ReactDOM.render(
-  <Profile
-    name={user.name}
-    tag={user.tag}
-    location={user.location}
-    avatar={user.avatar}
-    stats={user.stats}
-  />,
-  document.getElementById('root'),
-);
+<Profile
+  name={user.name}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  stats={user.stats}
+/>
 ```

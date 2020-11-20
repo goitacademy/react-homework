@@ -7,7 +7,7 @@
 пользователями разных стран, финансовые траты и т. п. Данные о статистике лежат
 в файле [statistical-data.json](./statistical-data.json).
 
-![profile preview](./mockup/preview.jpg)
+![Превью компонента Statistics](./preview.jpg)
 
 ## Описание компонента
 
@@ -51,10 +51,8 @@
 ## Пример использования
 
 ```js
-import statisticalData from '/path/to/statistical-data.json';
+import statisticalData from '/путь/к/statistical-data.json';
 
-ReactDOM.render(
-  <Statistics title="Upload stats" stats={statisticalData} />,
-  document.getElementById('root'),
-);
+<Statistics title="Upload stats" stats={statisticalData} />;
+<Statistics stats={statisticalData} />;
 ```

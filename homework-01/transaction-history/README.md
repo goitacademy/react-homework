@@ -5,7 +5,7 @@
 Необходимо создать компонент истории транзакций в личном кабинете интернет
 банка.
 
-![preview](./mockup/preview.jpg)
+![Превью компонента TransactionHistory](./preview.jpg)
 
 Данные для списка доступны в формате JSON в файле
 [transactions.json](./transactions.json). Это массив объектов, каждый объект
@@ -20,7 +20,7 @@
 
 Необходимо создать компонент `<TransactionHistory>` принимающий один проп
 `items` - массив объектов транзакций из `transactions.json`. Компонент создает
-разметку таблицы. Каждая транзакция это строка таблицы, для примера указана
+разметку таблицы. Каждая транзакция это строка таблицы. В примере приведена
 разметка двух транзакций.
 
 ```html
@@ -51,10 +51,7 @@
 ## Пример использования
 
 ```js
-import transactions from 'path/to/transactions.json';
+import transactions from 'путь/к/transactions.json';
 
-ReactDOM.render(
-  <TransactionHistory items={transactions} />,
-  document.getElementById('root'),
-);
+<TransactionHistory items={transactions} />;
 ```

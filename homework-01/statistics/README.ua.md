@@ -7,7 +7,7 @@
 користувачами різних країн, фінансові витрати і т. п. Дані про статистику лежать
 у файлі [statistical-data.json](./statistical-data.json).
 
-![profile preview](./mockup/preview.jpg)
+![profile preview](./preview.jpg)
 
 ## Опис компонента
 

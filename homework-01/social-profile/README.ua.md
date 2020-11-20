@@ -6,7 +6,7 @@
 відображати інформацію про користувача соціальної мережі. Дані про користувача
 лежать в файлі [user.json](./user.json).
 
-![profile preview](./mockup/preview.png)
+![profile preview](./preview.png)
 
 ## Опис компонента
 
@@ -53,16 +53,13 @@
 ## Приклад використання
 
 ```js
-import user from 'path/to/user.json;
+import user from 'путь/к/user.json;
 
-ReactDOM.render(
-  <Profile
-    name={user.name}
-    tag={user.tag}
-    location={user.location}
-    avatar={user.avatar}
-    stats={user.stats}
-  />,
-  document.getElementById('root'),
-);
+<Profile
+  name={user.name}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  stats={user.stats}
+/>
 ```
