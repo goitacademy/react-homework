@@ -32,7 +32,7 @@
 Используй только возможности библиотеки Redux (без redux-toolkit).
 
 - Создай хранилище и добавь
-  [инструменты разработчика](http://extension.remotedev.io/)
+  [инструменты разработчика](https://github.com/zalmoxisus/redux-devtools-extension#13-use-redux-devtools-extension-package-from-npm)
 - Создай действия (actions) сохранения и удаления контакта, а также обновления
   фильтра.
 - Вынеси типы действий в отдельный файл констант.
