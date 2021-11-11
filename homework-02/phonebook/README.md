@@ -17,7 +17,7 @@
   type="text"
   name="name"
   pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-  title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
+  title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
   required
 />
 ```
@@ -34,8 +34,8 @@ state = {
 
 Каждый контакт должен быть объектом со свойствами `name` и `id`. Для генерации
 идентификаторов используй любой подходящий пакет, например
-[uuid](https://www.npmjs.com/package/uuid#version-4). После завершения этого
-шага, приложение должно выглядеть примерно так.
+[nanoid](https://www.npmjs.com/package/nanoid). После завершения этого шага,
+приложение должно выглядеть примерно так.
 
 ![preview](./mockup/step-1.png)
 
@@ -60,7 +60,7 @@ state = {
   type="tel"
   name="number"
   pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-  title="Номер телефона должен состоять цифр и может содержать пробелы, тире, круглые скобки и может начинаться с +"
+  title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
   required
 />
 ```
@@ -126,7 +126,7 @@ state = {
 
 После рефакторинга корневой компонент приложения будет выглядеть так.
 
-```html
+```jsx
 <div>
   <h1>Phonebook</h1>
   <ContactForm ... />

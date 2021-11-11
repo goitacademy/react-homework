@@ -8,14 +8,14 @@
 
 ![Превью компонента Profile](./preview.png)
 
-## Описание компонента
+## Описание компонента `<Profile>`
 
 Компонент должен принимать несколько пропсов с информацией о пользователе:
 
-- `name` — имя пользователя
+- `username` — имя пользователя
 - `tag` — тег в социальной сети без `@`
 - `location` — город и страна
-- `avatar` — url на изображение
+- `avatar` — ссылка на изображение
 - `stats` — объект с информацией об активности
 
 Компонент должен создавать DOM элемент следующей структуры.
@@ -24,8 +24,8 @@
 <div class="profile">
   <div class="description">
     <img
-      src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
-      alt="Аватар пользователя"
+      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+      alt="User avatar"
       class="avatar"
     />
     <p class="name">Petra Marica</p>
@@ -56,7 +56,7 @@
 import user from 'путь/к/user.json;
 
 <Profile
-  name={user.name}
+  username={user.username}
   tag={user.tag}
   location={user.location}
   avatar={user.avatar}

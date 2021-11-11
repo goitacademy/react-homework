@@ -2,7 +2,7 @@
 
 # Критерии приема
 
-- Создан репозиторий `goit-react-hw-04-movies`
+- Создан репозиторий `goit-react-hw-05-movies`
 - При сдаче домашней работы есть ссылки: на исходные файлы и рабочие страницы
   каждого проекта на `Netlify`
 - В состоянии компонентов хранится минимально необходимый набор данных,
@@ -10,12 +10,11 @@
 - При запуске кода задания, в консоли нету ошибок и предупреждений
 - Для каждого компонента есть отдельная папка с файлом React-компонента и файлом
   стилей
-- Для компонентов описаны `propTypes`, и где необходимо, `defaultProps`
+- Для компонентов описаны `propTypes`
 - Все что компонент ожидает в виде пропов, передается ему при вызове
 - Имена компонентов понятные, описательные
 - JS-код чистый и понятный, используется `Prettier`
-- Стилизация делается только `SASS`, `CSS-модулями` или `Styled Components`.
-  Можно использовать библиотеки компонентов.
+- Стилизация выполнена `CSS-модулями` или `Styled Components`.
 
 ## Задание «Кинопоиск»
 
@@ -29,16 +28,16 @@
 Необходимо зарегистриваться (можно ввести произвольные данные) и получить
 API-ключ. В этой работе будут использоваться следующие ендпоинты.
 
-- [https://developers.themoviedb.org/3/trending/get-trending](https://developers.themoviedb.org/3/trending/get-trending) -
+- [/trending/get-trending](https://developers.themoviedb.org/3/trending/get-trending)
   список самых популярных фильмов на сегодня для создания коллекции на главной
   странице.
-- [https://developers.themoviedb.org/3/search/search-movies](https://developers.themoviedb.org/3/search/search-movies) -
+- [/search/search-movies](https://developers.themoviedb.org/3/search/search-movies)
   поиск кинофильма по ключевому слову на странице фильмов.
-- [https://developers.themoviedb.org/3/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details) -
+- [/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details)
   запрос полной информации о фильме для страницы кинофильма.
-- [https://developers.themoviedb.org/3/movies/get-movie-credits](https://developers.themoviedb.org/3/movies/get-movie-credits) -
+- [/movies/get-movie-credits](https://developers.themoviedb.org/3/movies/get-movie-credits)
   запрос информации о актёрском составе для страницы кинофильма.
-- [https://developers.themoviedb.org/3/movies/get-movie-reviews](https://developers.themoviedb.org/3/movies/get-movie-reviews) -
+- [/movies/get-movie-reviews](https://developers.themoviedb.org/3/movies/get-movie-reviews)
   запрос обзоров для страницы кинофильма.
 
 [Ссылка на документацию](https://developers.themoviedb.org/3/getting-started/introduction)

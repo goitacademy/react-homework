@@ -21,7 +21,7 @@
 URL-строка HTTP-запроса.
 
 ```bash
-https://pixabay.com/api/?q=что_искать&page=номер_страницы&key=твой_ключ&image_type=photo&orientation=horizontal&per_page=12
+https://pixabay.com/api/?q=cat&page=1&key=your_key&image_type=photo&orientation=horizontal&per_page=12
 ```
 
 Pixabay API поддерживает пагинацию, по умолчанию параметр `page` равен `1`.
@@ -36,20 +36,20 @@ Pixabay API поддерживает пагинацию, по умолчанию
 - `webformatURL` - ссылка на маленькое изображение для списка карточек
 - `largeImageURL` - ссылка на большое изображение для модального окна
 
-## Описание компонента Searchbar
+## Описание компонента `<Searchbar>`
 
 Компонент принимает один проп `onSubmit` - функцию для передачи значения инпута
 при сабмите формы. Создает DOM-элемент следующей структуры.
 
 ```html
-<header className="Searchbar">
-  <form className="SearchForm">
-    <button type="submit" className="SearchForm-button">
-      <span className="SearchForm-button-label">Search</span>
+<header class="searchbar">
+  <form class="form">
+    <button type="submit" class="button">
+      <span class="button-label">Search</span>
     </button>
 
     <input
-      className="SearchForm-input"
+      class="input"
       type="text"
       autocomplete="off"
       autofocus
@@ -59,52 +59,42 @@ Pixabay API поддерживает пагинацию, по умолчанию
 </header>
 ```
 
-## Описание компонента ImageGallery
+## Описание компонента `<ImageGallery>`
 
 Список карточек изображений. Создает DOM-элемент следующей структуры.
 
 ```html
-<ul className="ImageGallery">
+<ul class="gallery">
   <!-- Набор <li> с изображениями -->
 </ul>
 ```
 
-## Описание компонента ImageGalleryItem
+## Описание компонента `<ImageGalleryItem>`
 
 Компонент элемента списка с изображением. Создает DOM-элемент следующей
 структуры.
 
 ```html
-<li className="ImageGalleryItem">
-  <img src="" alt="" className="ImageGalleryItem-image" />
+<li class="gallery-item">
+  <img src="" alt="" />
 </li>
 ```
 
-## Описание компонента Button
+## Описание компонента `<Button>`
 
 При нажатии на кнопку `Load more` должна догружаться следующая порция
-изображений и рендериться вместе с предыдущими. После загрузки и рендера новой
-партии изображений страница должна плавно скролиться. Для скрола используй
-следующий код.
+изображений и рендериться вместе с предыдущими. Кнопка должна рендерится только
+тогда, когда есть какие-то загруженные изобаржения. Если массив изображений
+пуст, кнопка не рендерится.
 
-```js
-window.scrollTo({
-  top: document.documentElement.scrollHeight,
-  behavior: 'smooth',
-});
-```
-
-Кнопка должна рендерится только тогда, когда есть какие-то загруженные
-изобаржения. Если массив изображений пуст, кнопка не рендерится.
-
-## Описание компонента Loader
+## Описание компонента `<Loader>`
 
 Компонент спинера, отображется пока идет загрузка изобаржений. Используй любой
 готовый компонент, например
 [react-loader-spinner](https://github.com/mhnpd/react-loader-spinner) или любой
 другой.
 
-## Описание компонента Modal
+## Описание компонента `<Modal>`
 
 При клике по элементу галереи должно открываться модальное окно с темным
 оверлеем и отображаться большая версия изображения. Модальное окно должно
@@ -116,8 +106,8 @@ window.scrollTo({
 делать не нужно!
 
 ```html
-<div className="Overlay">
-  <div className="Modal">
+<div class="overlay">
+  <div class="modal">
     <img src="" alt="" />
   </div>
 </div>

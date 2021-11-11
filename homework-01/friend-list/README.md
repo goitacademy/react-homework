@@ -8,7 +8,7 @@
 
 ![Превью компонента FriendList](./preview.jpg)
 
-## Описание компонента FriendList
+## Описание компонента `<FriendList>`
 
 Компонент должен принимать один проп `friends` - массив объектов друзей.
 
@@ -16,11 +16,11 @@
 
 ```html
 <ul class="friend-list">
-  <!-- Произвольное кол-во FriendListItem, в зависимости от кол-ва объектов в массиве -->
+  <!-- Произвольное кол-во FriendListItem -->
 </ul>
 ```
 
-## Описание компонента FriendListItem
+## Описание компонента `<FriendListItem>`
 
 Компонент должен принимать несколько пропов:
 
@@ -36,7 +36,7 @@
 ```html
 <li class="item">
   <span class="status"></span>
-  <img class="avatar" src="" alt="" width="48" />
+  <img class="avatar" src="" alt="User avatar" width="48" />
   <p class="name"></p>
 </li>
 ```

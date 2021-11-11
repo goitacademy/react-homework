@@ -3,9 +3,9 @@
 # Секция статистики
 
 Создать компонет `<Statistics>`, который бы отображал статистику по переданным
-пропам. К примеру загрузки в облако по типу файлов, посещение веб-страницы
+пропам. Например, загрузки в облако по типу файлов, посещение веб-страницы
 пользователями разных стран, финансовые траты и т. п. Данные о статистике лежат
-в файле [statistical-data.json](./statistical-data.json).
+в файле [data.json](./data.json).
 
 ![Превью компонента Statistics](./preview.jpg)
 
@@ -51,8 +51,8 @@
 ## Пример использования
 
 ```js
-import statisticalData from '/путь/к/statistical-data.json';
+import data from '/путь/к/data.json';
 
-<Statistics title="Upload stats" stats={statisticalData} />;
-<Statistics stats={statisticalData} />;
+<Statistics title="Upload stats" stats={data} />;
+<Statistics stats={data} />;
 ```

@@ -1,65 +1,64 @@
 **Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**
 
-# Критерії прийому
+# Критерии приема
 
-- Створено репозиторії `goit-react-hw-04-movies`
-- При здачі домашньої роботи є посилання: на вихідні файли і робочу сторінку
-  проектів на `Netlify`
-- У стані компонентів зберігається мінімально необхідний набір даних, інше
-  обчислюється
-- При запуску коду завдання, в консолі немає помилок і попереджень
-- Для кожного компонента є окрема папка з файлом React-компонента і файлом
-  стилів
-- Для компонентів описані `propTypes`, і де необхідно, `defaultProps`
-- Все що компонент очікує у вигляді пропів, передається йому при виклику
-- Імена компонентів зрозумілі, описові
-- JS-код чистий і зрозумілий, використовується `Prettier`
-- Стилізація робиться тільки `SASS`, `CSS-модулями` або `Styled Components`.
-  Можна використовувати бібліотеки компонентів.
+- Создан репозиторий `goit-react-hw-05-movies`
+- При сдаче домашней работы есть ссылки: на исходные файлы и рабочие страницы
+  каждого проекта на `Netlify`
+- В состоянии компонентов хранится минимально необходимый набор данных,
+  остальное вычисляется
+- При запуске кода задания, в консоли нету ошибок и предупреждений
+- Для каждого компонента есть отдельная папка с файлом React-компонента и файлом
+  стилей
+- Для компонентов описаны `propTypes`
+- Все что компонент ожидает в виде пропов, передается ему при вызове
+- Имена компонентов понятные, описательные
+- JS-код чистый и понятный, используется `Prettier`
+- Стилизация выполнена `CSS-модулями` или `Styled Components`.
 
-## Завдання «Кінопошук»
+## Задание «Кинопоиск»
 
-Створи базову маршрутизацію для програми пошуку і зберігання фільмів. Прев'ю
-робочого додатку
-[дивись за посиланням](https://drive.google.com/file/d/1vR0hi3n1236Q5Bg4-se-8JVKD9UKSfId/view?usp=sharing).
+Создай базовую маршрутизацию для приложения поиска и хранения фильмов. Превью
+рабочего приложения
+[смотри по ссылке](https://drive.google.com/file/d/1vR0hi3n1236Q5Bg4-se-8JVKD9UKSfId/view?usp=sharing).
 
 ## API themoviedb.org
 
-Для бекенда використовуй [themoviedb.org API](https://www.themoviedb.org/).
-Необхідно зареєструватися (можна ввести довільні дані) і отримати API-ключ. У
-цій роботі будуть використовуватися такі ендпоінти.
+Для бекенда используй [themoviedb.org API](https://www.themoviedb.org/).
+Необходимо зарегистриваться (можно ввести произвольные данные) и получить
+API-ключ. В этой работе будут использоваться следующие ендпоинты.
 
-- [https://developers.themoviedb.org/3/trending/get-trending](https://developers.themoviedb.org/3/trending/get-trending) -
-  список найпопулярніших фільмів на сьогодні для створення колекції на головній
-  сторінці.
-- [https://developers.themoviedb.org/3/search/search-movies](https://developers.themoviedb.org/3/search/search-movies) -
-  пошук фільму по ключовому слову на сторінці фільмів.
-- [https://developers.themoviedb.org/3/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details) -
-  запит повної інформації про фільм для сторінки кінофільму.
-- [https://developers.themoviedb.org/3/movies/get-movie-credits](https://developers.themoviedb.org/3/movies/get-movie-credits) -
-  запит інформації про акторський склад для сторінки кінофільму.
-- [https://developers.themoviedb.org/3/movies/get-movie-reviews](https://developers.themoviedb.org/3/movies/get-movie-reviews) -
-  запит оглядів для сторінки кінофільму.
+- [/trending/get-trending](https://developers.themoviedb.org/3/trending/get-trending)
+  список самых популярных фильмов на сегодня для создания коллекции на главной
+  странице.
+- [/search/search-movies](https://developers.themoviedb.org/3/search/search-movies)
+  поиск кинофильма по ключевому слову на странице фильмов.
+- [/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details)
+  запрос полной информации о фильме для страницы кинофильма.
+- [/movies/get-movie-credits](https://developers.themoviedb.org/3/movies/get-movie-credits)
+  запрос информации о актёрском составе для страницы кинофильма.
+- [/movies/get-movie-reviews](https://developers.themoviedb.org/3/movies/get-movie-reviews)
+  запрос обзоров для страницы кинофильма.
 
-[Посилання на документацію](https://developers.themoviedb.org/3/getting-started/introduction)
+[Ссылка на документацию](https://developers.themoviedb.org/3/getting-started/introduction)
 
-## Маршрути
+## Маршруты
 
-У додатку повинні бути наступні маршрути. Якщо користувач зайшов по неіснуючому
-маршруту, його необхідно перенаправляти на домашню сторінку.
+В приложении должны быть следующие маршруты. Если пользователь зашел по
+несуществующему маршруту, его необходимо перенаправлять на домашнюю страницу.
 
-- `'/'` - компонент `<HomePage>`, домашня сторінка зі списком популярних
-  кінофільмів.
-- `'/movies'` - компонент `<MoviesPage>`, сторінка пошуку фільмів по ключовому
+- `'/'` - компонент `<HomePage>`, домашняя страница со списком популярных
+  кинофильмов.
+- `'/movies'` - компонент `<MoviesPage>`, страница поиска фильмов по ключевому
   слову.
-- `'/movies/:movieId'` - компонент `<MovieDetailsPage>`, сторінка з детальною
-  інформацією про кінофільми.
-- `/movies/:movieId/cast` - компонент `<Cast>`, інформація про акторський склад.
-  Рендериться на сторінці `<MovieDetailsPage>`.
-- `/movies/:movieId/reviews` - компонент `<Reviews>`, інформація про огляди.
-  Рендериться на сторінці `<MovieDetailsPage>`.
+- `'/movies/:movieId'` - компонент `<MovieDetailsPage>`, страница с детальной
+  информацией о кинофильме.
+- `/movies/:movieId/cast` - компонент `<Cast>`, информация о актерском составе.
+  Рендерится на странице `<MovieDetailsPage>`.
+- `/movies/:movieId/reviews` - компонент `<Reviews>`, информация об обзорах.
+  Рендерится на странице `<MovieDetailsPage>`.
 
-## Code Splitting (розщеплення коду)
+## Code Splitting (разделение кода)
 
-Додай асинхронне завантаження JS-коду для маршрутів додатки використовуючи
-`React.lazy()` і `Suspense`.
+Добавь асинхронную загрузку JS-кода для маршрутов приложения используя
+`React.lazy()` и `Suspense`.
