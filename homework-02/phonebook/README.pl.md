@@ -1,16 +1,21 @@
-**Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**
+**Читать на других языках: Czytaj w innych językach [rosyjski](README.md), [ukraiński](README.ua.md).**
 
-# Телефонная книга
+# Телефонная книга Książka telefoniczna
 
 Напиши приложение хранения контактов телефонной книги.
+Napisz aplikację do przechowywania kontaktów z książki telefonicznej.
 
-## Шаг 1
+## Шаг 1 Krok 1
 
 Приложение должно состоять из формы и списка контактов. На текущем шаге реализуй
 добавление имени контакта и отображение списка контактов. Приложение не должно
 сохранять контакты между разными сессиями (обновление страницы).
 
+Aplikacja powinna składać się z formularza i listy kontaktów. W tym kroku zrealizuj dodanie nazwy kontaktu i wyświetlanie listy kontaktów. Aplikacja nie powinna zapisywać kontaktów między różnymi sesjami (aktualizacja stony).
+
 Используй эту разметку инпута с встроенной валидацией для имени контакта.
+Wykorzystaj ten ukłąd input z wmontowaną walidacją nazwy kontaktu.
+
 
 ```html
 <input
@@ -25,6 +30,8 @@
 Состояние хранящееся в родительском компоненте `<App>` обязательно должно быть
 следующего вида, добавлять новые свойства нельзя.
 
+Stan przechowywany w komponencie rodzicu `<App>` powinno wyglądać następująco, nie należy dodawać nowych własciwości.
+
 ```bash
 state = {
   contacts: [],
@@ -37,13 +44,17 @@ state = {
 [nanoid](https://www.npmjs.com/package/nanoid). После завершения этого шага,
 приложение должно выглядеть примерно так.
 
+Każdy kontakt powinien być obiektem z właściwościami `name` i `id`. Do generowania identyfikatoró∑ wykorzystaj dowolną pasującą paczkę, na przykład [nanoid](https://www.npmjs.com/package/nanoid). Po tym kroku aplikcja powinna wyglądać mniej więcej tak.
+
 ![preview](./mockup/step-1.png)
 
-## Шаг 2
+## Шаг 2 Krok 2
 
 Расширь функционал приложения, позволив пользователям добавлять номера
 телефонов. Для этого добавь `<input type="tel">` в форму, и свойство для
 хранения его значения в состоянии.
+
+Rozszerz funkcjonalność aplikacji, pozwalając użytkownikom dodawać numery telefonów. W tym celu dodaj do formularza `<input type="tel">` oraz właściwość dla przechowywania jego wartości w stanie.
 
 ```bash
 state = {
@@ -54,6 +65,7 @@ state = {
 ```
 
 Используй эту разметку инпута с встроенной валидацией для номера контакта.
+Wykorzystaj układ input z wmontowan wlidacją dla numeru kontaktu.
 
 ```html
 <input
