@@ -1,4 +1,4 @@
-**Читать на других языках:Czytaj w innych językach [Русский Rosyjski](README.md), [Українська Ukraiński](README.ua.md).**
+**Читать на других языках:Czytaj w innych językach [Русский rosyjski](README.md), [Українська ukraiński](README.ua.md).**
 
 # Критерии приема Kryteria zaliczenia
 
