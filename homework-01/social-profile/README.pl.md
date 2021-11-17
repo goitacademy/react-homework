@@ -1,24 +1,28 @@
-**Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**
+**Читать на других языках Czytaj w innych językach: [rosyjski](README.md), [ukraiński](README.ua.md).**
 
-# Профиль социальной сети
+# Профиль социальной сети Profil w sieci społecznościowej
 
 Необходимо создать компонент `<Profile>`, с помощью которого мы могли бы
 отображать информацию о пользователе социальной сети. Данные о пользователе
 лежат в файле [user.json](./user.json).
 
-![Превью компонента Profile](./preview.png)
+Należy stworzyć komponent `<Profile>`, przy pomocy którego możemy wyświetlać informacje o użytkowniku sieci społecznościowej. Dane o użytkowniku leżą w pliku [user.json](./user.json).
 
-## Описание компонента `<Profile>`
+![Превью компонента Prewiev komponntu Profile](./preview.png)
+
+## Описание компонента Opis komponentu `<Profile>`
 
 Компонент должен принимать несколько пропсов с информацией о пользователе:
+Komponent powinien przyjmować kilka propsów z informacją o użytkowniku:
 
-- `username` — имя пользователя
-- `tag` — тег в социальной сети без `@`
-- `location` — город и страна
-- `avatar` — ссылка на изображение
-- `stats` — объект с информацией об активности
+- `username` — имя пользователя nazwa użytkownika
+- `tag` — тег в социальной сети без `@` tag w sieci społęcznościowej bez `@`
+- `location` — город и страна miasti i państwo 
+- `avatar` — ссылка на изображение odnośnik do zdjęcia
+- `stats` — объект с информацией об активности obiekt z informacją o aktywności
 
 Компонент должен создавать DOM элемент следующей структуры.
+Komponent powinen tworzyć element DOM o następującej strukturze.
 
 ```html
 <div class="profile">
@@ -50,7 +54,7 @@
 </div>
 ```
 
-## Пример использования
+## Пример использования Przykład wykorzystania
 
 ```js
 import user from 'путь/к/user.json;
