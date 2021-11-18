@@ -1,34 +1,19 @@
-**Читать на других языках Czytaj w innych językach: [rosyjski](README.md), [ukraiński](README.ua.md).**
+**Czytaj w innych językach: [rosyjski](README.md), [ukraiński](README.ua.md).**
 
-# Секция статистики Sekcja statystyki
+# Sekcja statystyki
 
-Создать компонет `<Statistics>`, который бы отображал статистику по переданным
-пропам. Например, загрузки в облако по типу файлов, посещение веб-страницы
-пользователями разных стран, финансовые траты и т. п. Данные о статистике лежат
-в файле [data.json](./data.json).
+Należy utworzyć komponent `<Statistics>`, który będzie wyświetlał statystyki zgodnie z przekazanymi propsami. Na przykład ładowanie w chmurze po typie pliku, odwiedziny strony internetowej przez użytkowników z różnych krajów, wydatki finansowe itp. Dane o statystykach znajdują się w pliku [data.json](./data.json).
 
-Należy utworzyć komponent `<Statistics>`, który będzie wyświetlał statystyki zgodnie z przekazanymi popsami. Na przykład ładowanie w chmurze po typie pliku, odwiedziny strony internetowej przez użytkowników z różnych krajów, wydatki finansowe itp. Dane o statystykach leżą w pliku [data.json](./data.json).
+![Preview komponentu Statistics](./preview.jpg)
 
-![Превью компонента Prewiev komponentu Statistics](./preview.jpg)
+## Opis komponentu
 
-## Описание компонента Opis komponentu
+Komponent powinien przyjmować dwa propsy `title` i `stats`, w których wyświetla się nagłówek i obiekt statystyk.
 
-Компонент должен принимать два пропа `title` и `stats`, в которых указывается
-заголовок и объект статистики.
+- `title` - nie jest obowiązkowy i jeśli nie został przekazany, układ nagłówka nie powinien się renderować `<h2>`. 
+- `stats` - tablica obiektów zawierających informację o elemencie statystyki. Może mieć dowolną ilość elementów.
+- Kolor tła elementu statystyki można opuścić lub utworzyć funkcję do generowania losowego koloru.
 
-Komponent powinien przyjmowac dwa propsy `title` i `stats`, w których wyświetla się ngłówek i obiekt statystyk.
-
-- `title` - не обязателен, и если он не передан, не должна рендериться разметка
-  заголовка `<h2>`.
-  nie jest obowiązkowy i jeśli nie został przekazany, układ nagłówka nie powinien się renderować `<h2>`. 
-- `stats` - массив объектов содержащих информацию о элементе статистики. Может
-  иметь произвольное кол-во элементов.
-  tablica obiektów zawierających informcję o elemencie statystyki. Może mieć dowolną ilość elementów.
-- Цвет фона элемента статистики в оформлении можно пропустить, либо создать
-  функцию для генерации случайного цвета.
-  Kolor tła elementu statystyki można opuścić lub utworzyć funkcje do generowania losowego koloru.
-
-Компонент должен создавать DOM элемент следующей структуры.
 Komponent powinien tworzyć element DOM o następującej strukturze.
 
 ```html
@@ -56,10 +41,10 @@ Komponent powinien tworzyć element DOM o następującej strukturze.
 </section>
 ```
 
-## Пример использования Przykład wykorzystania
+## Przykład wykorzystania
 
 ```js
-import data from '/путь/к/data.json';
+import data from '/droga/do/data.json';
 
 <Statistics title="Upload stats" stats={data} />;
 <Statistics stats={data} />;
