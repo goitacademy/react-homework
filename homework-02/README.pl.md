@@ -13,5 +13,5 @@
 
 ## Zadania
 
-- [Zadanie 1 - Widget odpowiedzi](./feedback/)
-- [Zadanie 2 - Książka telefoniczna](./phonebook/)
+- [Zadanie 1 - Widget odpowiedzi](./feedback/README.pl.md)
+- [Zadanie 2 - Książka telefoniczna](./phonebook/README.pl.md)
