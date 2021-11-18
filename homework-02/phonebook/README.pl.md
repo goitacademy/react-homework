@@ -2,7 +2,7 @@
 
 # Książka telefoniczna
 
-Napisz aplikację do przechowywania kontaktów z książki telefonicznej.
+Napisz aplikację do przechowywania kontaktów w książce telefonicznej.
 
 ## Krok 1
 
