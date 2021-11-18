@@ -1,28 +1,22 @@
-**Читать на других языках Czytaj w innych językach: [rosyjski](README.md), [ukraiński](README.ua.md).**
+**Czytaj w innych językach: [rosyjski](README.md), [ukraiński](README.ua.md).**
 
-# Профиль социальной сети Profil w sieci społecznościowej
+# Profil w sieci społecznościowej
 
-Необходимо создать компонент `<Profile>`, с помощью которого мы могли бы
-отображать информацию о пользователе социальной сети. Данные о пользователе
-лежат в файле [user.json](./user.json).
+Należy stworzyć komponent `<Profile>`, przy pomocy którego możemy wyświetlać informacje o użytkowniku sieci społecznościowej. Dane o użytkowniku znajdują się w pliku [user.json](./user.json).
 
-Należy stworzyć komponent `<Profile>`, przy pomocy którego możemy wyświetlać informacje o użytkowniku sieci społecznościowej. Dane o użytkowniku leżą w pliku [user.json](./user.json).
+![Preview komponentu Profile](./preview.png)
 
-![Превью компонента Prewiev komponntu Profile](./preview.png)
+## Opis komponentu `<Profile>`
 
-## Описание компонента Opis komponentu `<Profile>`
-
-Компонент должен принимать несколько пропсов с информацией о пользователе:
 Komponent powinien przyjmować kilka propsów z informacją o użytkowniku:
 
-- `username` — имя пользователя nazwa użytkownika
-- `tag` — тег в социальной сети без `@` tag w sieci społęcznościowej bez `@`
-- `location` — город и страна miasti i państwo 
-- `avatar` — ссылка на изображение odnośnik do zdjęcia
-- `stats` — объект с информацией об активности obiekt z informacją o aktywności
+- `username` — nazwa użytkownika
+- `tag` — tag w sieci społecznościowej bez `@`
+- `location` — miasto i państwo 
+- `avatar` — odnośnik do zdjęcia
+- `stats` — obiekt z informacją o aktywności
 
-Компонент должен создавать DOM элемент следующей структуры.
-Komponent powinen tworzyć element DOM o następującej strukturze.
+Komponent powinien tworzyć element DOM o następującej strukturze.
 
 ```html
 <div class="profile">
@@ -54,10 +48,10 @@ Komponent powinen tworzyć element DOM o następującej strukturze.
 </div>
 ```
 
-## Пример использования Przykład wykorzystania
+## Przykład wykorzystania
 
 ```js
-import user from 'путь/к/user.json;
+import user from 'droga/do/user.json;
 
 <Profile
   username={user.username}
