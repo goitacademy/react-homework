@@ -15,5 +15,5 @@
 
 ## Zadania
 
-- [Zadanie 1 - Książka telefoniczna](./phonebook/)
-- [Zadanie 2 - Wyszukiwanie obrazów](./image-finder/)
+- [Zadanie 1 - Książka telefoniczna](./phonebook/README.pl.md)
+- [Zadanie 2 - Wyszukiwanie obrazów](./image-finder/README.pl.md)
