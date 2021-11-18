@@ -17,7 +17,7 @@
 
 ##  Zadania
 
-- [Zadanie 1 - Profil w sieci społecznościowej](./social-profile/)
+- [Zadanie 1 - Profil w sieci społecznościowej](./social-profile/README.pl.md)
 - [Zadanie 2  - Sekcja statystyki](./statistics/)
 - [Zadanie 3 - Lista znajomych](./friend-list/)
 - [Zadanie 4 - Historia transakcji](./transaction-history/)
