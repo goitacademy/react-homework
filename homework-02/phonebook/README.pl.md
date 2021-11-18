@@ -65,7 +65,7 @@ state = {
 ```
 
 Используй эту разметку инпута с встроенной валидацией для номера контакта.
-Wykorzystaj układ input z wmontowan wlidacją dla numeru kontaktu.
+Wykorzystaj układ input z wmontowaną walidacją numeru kontaktu.
 
 ```html
 <input
@@ -78,17 +78,22 @@ Wykorzystaj układ input z wmontowan wlidacją dla numeru kontaktu.
 ```
 
 После завершения этого шага, приложение должно выглядеть примерно так.
+Po tym kroku aplikacja powinn działać mniej więcej tak.
 
 ![preview](./mockup/step-2.png)
 
-## Шаг 3
+## Шаг 3 Krok 3
 
 Добавь поле поиска, которое можно использовать для фильтрации списка контактов
 по имени.
 
+Dodaj pole wyszukiwania, które można wykorzystać do filtrowania listy kontaktów po nazwie.
+
 - Поле поиска это инпут без формы, значение которого записывается в состояние
   (контролируемый элемент).
+  Pole wyszukiwania to input bez formularza, którego wartość zapisuje się w stanie (kontrolowany element).
 - Логика фильтрации должна быть нечувствительна к регистру.
+- Logika filtrowania powinna być niewrażliwa na wielkość liter.
 
 ```bash
 state = {
@@ -106,6 +111,8 @@ state = {
 данные в интерфейсе для тестирования работы нового функционала. Например можно
 использовать такое начальное состояние.
 
+Gdy pracujemy nad nową funkcjonalnością, może być wygodne twarde zakodowanie niektórych danych w stanie. Sprawi to, że nie będziemy musieli ręcznie wprowadzać danych do interfejsu, aby przetestować pracę nowej funkcjonlności. Można na przykład wykorzystać taki stan początkowy.
+
 ```bash
 state = {
   contacts: [
@@ -120,11 +127,13 @@ state = {
 }
 ```
 
-## Шаг 4
+## Шаг 4 Krok 4
 
 Если твое приложение реализовано в одном компоненте `<App>`, выполни
 рефакторинг, выделив подходящие части в отдельные компоненты. В состоянии
 корневого компонента `<App>` останутся только свойства `contacts` и `filter`.
+
+Jeżeli twoja aplikcja jest realizowana w jednym komponencie `<App>`, wykonaj refaktor, rozdzielając pasujące części do oddzielnych komponentów. W stanie głównego komponentu `<App>` zostaną tylko właściwości `contacts` i `filter`.
 
 ```bash
 state = {
@@ -136,7 +145,10 @@ state = {
 Достаточно выделить четыре компонента: форма добавления контактов, список
 контактов, элемент списка контактов и фильтр поиска.
 
+Wystarczy wydzielić cztery komponenty: formularz dodania kontaktów, listę kontaktów, element listy kontaktów i filtr wyszukiwania.
+
 После рефакторинга корневой компонент приложения будет выглядеть так.
+Po refaktorze źródłowy komponent aplikacja będzie wyglądał tak.
 
 ```jsx
 <div>
@@ -149,17 +161,21 @@ state = {
 </div>
 ```
 
-## Шаг 5
+## Шаг 5 Krok 5
 
 Запрети пользователю возможность добавлять контакты, имена которых уже есть в
 телефонной книге. При попытке выполнить такое действие выведи `alert` с
 предупреждением.
 
+Wyłącz użytkownikowi możliwość dodawania kontaktów, których nazwy są już w książce telefonicznej. W razie próby wykonania takiego działania, pokaż `alert` z ostrzeżeniem.
+
 ![preview](./mockup/step-5.png)
 
-## Шаг 6
+## Шаг 6 Krok 6
 
 Расширь функционал приложения, позволив пользователю удалять ранее сохраненные
 контакты.
+
+Rozszerz funkcjonalność aplikacji, pozwalając użytkownikowi usuwać wcześniej zapisane kontakty.
 
 ![preview](./mockup/step-6.gif)
