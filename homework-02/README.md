@@ -1,5 +1,9 @@
 **Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**
 
+Используй этот
+[шаблон React-проекта](https://github.com/goitacademy/react-homework-template#readme)
+как стартовую точку своего приложения.
+
 # Критерии приема
 
 - Созданы репозитории `goit-react-hw-02-feedback` и
