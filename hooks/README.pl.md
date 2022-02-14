@@ -1,32 +1,24 @@
-Используй этот
-[шаблон React-проекта](https://github.com/goitacademy/react-homework-template#readme)
-как стартовую точку своего приложения.
+Wykorzystaj ten [szablon projektu React](https://github.com/goitacademy/react-homework-template#readme), jako punkt początkowy swojej aplikacji.
 
-# Критерии приема
+# Kryteria zaliczenia
 
-- При сдаче домашней работы есть ссылки: на исходные файлы и рабочую страницу
-  проектов на `GitHub Pages`.
-- При запуске кода задания, в консоли нету ошибок и предупреждений.
-- Для каждого компонента есть отдельная папка с файлом React-компонента и файлом
-  стилей.
-- Для компонентов описаны `propTypes`.
-- Имена компонентов понятные, описательные.
+- W oddawanej pracy domowej są odnośniki do plików źródłowych i strony roboczej projektów na `GitHub Pages`.
+- Po uruchomieniu kodu zadania, na konsoli nie ma błędów i ostrzeżeń.
+- Dla każdego komponentu stworzony został oddzielny folder z plikiem komponentu React i plikiem stylów.
+- Dla komponentów opisane są `propTypes`.
+- Nazwy komponentów są zrozumiałe i opisowe.
 
-## Виджет отзывов
+## Widget odpowiedzi
 
-- Создан репозиторий `goit-react-hw-04-hooks-feedback`.
-- Проведи рефакторинг кода задания
-  [Виджет отзывов](../homework-02/feedback/README.md) используя React-хуки.
+- Utworzone repozytorium `goit-react-hw-04-hooks-feedback`.
+- Przeprowadź refaktor kodu zadania [Widget odpowiedzi](../homework-02/feedback/README.md), wykorzystując hooki React.
 
-## Книга контактов
+## Książka kontaktów
 
-- Создан репозиторий `goit-react-hw-04-hooks-phonebook`.
-- Проведи рефакторинг кода задания
-  [Книга контактов](../homework-03/phonebook/README.md) используя React-хуки.
+- Utworzone repozytorium `goit-react-hw-04-hooks-phonebook`. 
+- Przeprowadź refaktor kodu zadania Książka kontaktów](../homework-03/phonebook/README.md), wykorzystując hooki React.
 
-## Поиск изображений
+## Wyszukiwanie obrazów
 
-- Создан репозиторий `goit-react-hw-04-hooks-images`.
-- Проведи рефакторинг кода задания
-  [Поиск изображений](../homework-03/image-finder/README.md) используя
-  React-хуки.
+- Utworzone repozytorium `goit-react-hw-04-hooks-images`.
+- Przeprowadź refaktor [Wyszukiwanie obrazów](../homework-03/image-finder/README.md), wykorzystując hooki React.
