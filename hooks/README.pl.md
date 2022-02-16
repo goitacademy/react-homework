@@ -1,4 +1,4 @@
-Wykorzystaj ten [szablon projektu React](https://github.com/goitacademy/react-homework-template#readme), jako punkt początkowy swojej aplikacji.
+Wykorzystaj ten [szablon projektu React](https://github.com/goitacademy/react-homework-template/blob/main/README.pl.md), jako punkt początkowy swojej aplikacji.
 
 # Kryteria zaliczenia
 
